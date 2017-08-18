@@ -4,4 +4,5 @@
 	Zach's custom css
 */
 
-@import url(https://rawgit.com/Masterzach32/BDStuff/master/CustomCss/version.css);
+@import url(https://rawgit.com/Masterzach32/BDStuff/master/CustomCss/root.css);
+@import url(https://rawgit.com/Masterzach32/BDStuff/master/CustomCss/version.min.css);
