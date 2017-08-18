@@ -1,9 +1,31 @@
-:root {
-    --accent-color: #3A71C1 !important;
-}
-
+@import "https://rawgit.com/Masterzach32/BDStuff/master/CustomCss/root.css";
 /* Fix long usernames */
 .container-iksrDt .accountDetails-15i-_e .username {
-	font-size: 13px !important;
-	text-overflow: none;
-}
+  font-size: 13px !important;
+  text-overflow: none; }
+
+/* Add border between new dms and guilds */
+.dms .guild:last-of-type {
+  border-bottom: solid rgba(255, 255, 255, 0.2) 2px !important; }
+
+/* Remove bold from BD version information */
+#bd-settings-sidebar span {
+  font-weight: normal !important; }
+
+/* Fix group call buttons alignment */
+.horizontal-2BEEBe > .flex-lFgbSz:last-child,
+.horizontal-2BEEBe > .flexChild-1KGW5q:last-child {
+  margin-right: 10px; }
+
+/* Theme the search bar for private channels */
+.private-channels .search-bar {
+  padding: 0; }
+
+.search-bar .search-bar-inner {
+  height: 100%;
+  padding: 0; }
+.search-bar input {
+  height: 100%;
+  padding: 5px 10px; }
+
+/*# sourceMappingURL=version.css.map */
