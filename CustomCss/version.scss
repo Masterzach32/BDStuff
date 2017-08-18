@@ -1,5 +1,10 @@
 @import 'https://rawgit.com/Masterzach32/BDStuff/master/CustomCss/root.css';
 
+$color-online: #43b581;
+$color-idle: #faa61a;
+$color-dnd: #f04747;
+$color-offline: #636b75;
+
 /* Fix long usernames */
 .container-iksrDt .accountDetails-15i-_e .username {
 	font-size: 13px !important;
@@ -37,3 +42,38 @@
 		padding: 5px 10px;
 	}
 }
+
+/* game as status color */
+@mixin member-activity-text($color) {
+	.member-inner .member-activity-text strong {
+		color: $color;
+	}
+}
+.channel-members {
+	.member.member-status-online {
+		@include member-activity-text($color-online);
+	}
+	
+	.member.member-status-idle {
+		@include member-activity-text($color-idle);
+	}
+	
+	.member.member-status-dnd {
+		@include member-activity-text($color-dnd);
+	}
+	
+	.member.member-status-offline {
+		@include member-activity-text($color-offline);
+	}
+}
+
+/* Adds a nice animation to new messages */
+.message.message-sending .markup{
+    animation:messages-slide-up 200ms cubic-bezier(.3,0,0,1),opacity 50ms ease;
+}
+@keyframes messages-slide-up{
+    from{
+        transform: translate(0,5px);
+    }
+}
+
