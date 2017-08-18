@@ -1,0 +1,9 @@
+:root {
+    --accent-color: #3A71C1 !important;
+}
+
+/* Fix long usernames */
+.container-iksrDt .accountDetails-15i-_e .username {
+	font-size: 13px !important;
+	text-overflow: none;
+}
