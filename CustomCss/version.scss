@@ -78,24 +78,26 @@ $color-offline: #636b75;
 }
 
 /* Slides guild wrapper out of view when not hovered */
-.guilds-wrapper {
-	transition: top .2s ease;
-	top: 0;
-	z-index: 1;
-}
-.guilds-wrapper:not(:hover) {
-	top: 50px;
-}
-.guilds-wrapper ~ div {
-	transition: height .2s ease;
-}
-.guilds-wrapper:not(:hover) ~ div {
-	height: 100%;
-}
-.guilds-wrapper {
-	transition: opacity .2s ease;
-	opacity: 1;
-}
-.guilds-wrapper:not(:hover) {
-	opacity: 0;
+.layer {
+	.guilds-wrapper {
+		transition: top .2s ease;
+		top: 0;
+		z-index: 1;
+	}
+	.guilds-wrapper:not(:hover) {
+		top: 50px;
+	}
+	.guilds-wrapper ~ div {
+		transition: height .2s ease;
+	}
+	.guilds-wrapper:not(:hover) ~ div {
+		height: 100%;
+	}
+	.guilds-wrapper {
+		transition: opacity .2s ease;
+		opacity: 1;
+	}
+	.guilds-wrapper:not(:hover) {
+		opacity: 0;
+	}
 }
