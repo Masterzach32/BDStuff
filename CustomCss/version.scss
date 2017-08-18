@@ -97,7 +97,7 @@ $guild-height: 70px;
   }
 }
 /* Fixes borders around guilds in list */
-.guilds-wrapper {
+/*.guilds-wrapper {
   width: $guild-height;
 
   .scroller-wrap {
@@ -124,7 +124,7 @@ $guild-height: 70px;
     top: 0;
     left: 0;
     transform: rotate(90deg);
-  }*/
+  }
 }
 /*.guilds-wrapper .scroller-wrap {
   width: $guild-height;

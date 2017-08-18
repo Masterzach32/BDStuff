@@ -56,8 +56,26 @@
   opacity: 0; }
 
 /* Fixes borders around guilds in list */
-.guilds-wrapper {
-  width: 70px;
+/*.guilds-wrapper {
+  width: $guild-height;
+
+  .scroller-wrap {
+    .guild {
+      height: $guild-height;
+      width: $guild-height;
+
+      .guild-inner a {
+        height: $guild-height !important;
+        width: $guild-height !important;
+      }
+    }
+  }
+
+  .guilds-add {
+    height: $guild-height;
+    width: $guild-height;
+  }
+
   /*a.guilds-error {
     height: 70px;
     width: 70px;
@@ -65,17 +83,8 @@
     top: 0;
     left: 0;
     transform: rotate(90deg);
-  }*/ }
-  .guilds-wrapper .scroller-wrap .guild {
-    height: 70px;
-    width: 70px; }
-    .guilds-wrapper .scroller-wrap .guild .guild-inner a {
-      height: 70px !important;
-      width: 70px !important; }
-  .guilds-wrapper .guilds-add {
-    height: 70px;
-    width: 70px; }
-
+  }
+}
 /*.guilds-wrapper .scroller-wrap {
   width: $guild-height;
 }*/
