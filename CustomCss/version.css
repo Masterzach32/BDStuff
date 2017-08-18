@@ -1,3 +1,4 @@
+@import "https://rawgit.com/Masterzach32/BDStuff/master/CustomCss/root.css";
 /* Fix long usernames */
 .container-iksrDt .accountDetails-15i-_e .username {
   font-size: 13px !important;
@@ -37,13 +38,6 @@
 .channel-members .member.member-status-offline .member-inner .member-activity-text strong {
   color: #636b75; }
 
-/* Adds a nice animation to new messages */
-.message.message-sending .markup {
-  animation: messages-slide-up 200ms cubic-bezier(0.3, 0, 0, 1), opacity 50ms ease; }
-
-@keyframes messages-slide-up {
-  from {
-    transform: translate(0, 5px); } }
 /* Slides guild wrapper out of view when not hovered */
 .layer .guilds-wrapper {
   transition: top .2s ease;
@@ -63,7 +57,15 @@
 
 /* Fixes borders around guilds in list */
 .guilds-wrapper {
-  width: 70px; }
+  width: 70px;
+  /*a.guilds-error {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: rotate(90deg);
+  }*/ }
   .guilds-wrapper .scroller-wrap .guild {
     height: 70px;
     width: 70px; }
@@ -73,8 +75,6 @@
   .guilds-wrapper .guilds-add {
     height: 70px;
     width: 70px; }
-  .guilds-wrapper .guilds-error {
-    transform: rotate(90deg); }
 
 /*.guilds-wrapper .scroller-wrap {
   width: $guild-height;
@@ -85,11 +85,13 @@
 }*/
 /* Adds a nice animation to the call bar */
 .channels-wrap .container-3lnMWU {
-  animation: callbar-slide-up 200ms cubic-bezier(0.2, 0, 0, 1); }
-  .channels-wrap .container-3lnMWU .inner-ptMwR- {
-    animation: callbar-slide-up 200ms cubic-bezier(0.2, 0, 0, 1); }
-  .channels-wrap .container-3lnMWU .flex-lFgbSz .buttonInfo-3r6H7z {
+  animation: callbar-slide-up 250ms cubic-bezier(0.2, 0, 0, 1); }
+  .channels-wrap .container-3lnMWU .inner-ptMwR- .rtc-connection-status {
+    animation: callbar-slide-up 300ms cubic-bezier(0.2, 0, 0, 1); }
+  .channels-wrap .container-3lnMWU .inner-ptMwR- .channel-3YGMy1 {
     animation: callbar-slide-up 400ms cubic-bezier(0.2, 0, 0, 1); }
+  .channels-wrap .container-3lnMWU .flex-lFgbSz .buttonInfo-3r6H7z {
+    animation: callbar-slide-up 450ms cubic-bezier(0.2, 0, 0, 1); }
   .channels-wrap .container-3lnMWU .flex-lFgbSz .buttonDisconnect-3xZpYL {
     animation: callbar-slide-up 600ms cubic-bezier(0.2, 0, 0, 1); }
 
@@ -104,12 +106,12 @@
 .message.message-sending .markup {
   animation: messages-slide-up 300ms cubic-bezier(0.3, 0, 0, 1), opacity 50ms ease; }
 
-.messages .message-group {
-  animation: message-group-slide-up 300ms cubic-bezier(0.3, 0, 0, 1), opacity 50ms ease; }
-
 @keyframes messages-slide-up {
   from {
     transform: translate(0, 5px); } }
+.messages .message-group {
+  animation: message-group-slide-up 300ms cubic-bezier(0.3, 0, 0, 1), opacity 50ms ease; }
+
 @keyframes message-group-slide-up {
   from {
     transform: translate(0, 10px); } }
