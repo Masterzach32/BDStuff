@@ -1,0 +1,61 @@
+/* Slides guild wrapper out of view when not hovered */
+.layer {
+  .guilds-wrapper {
+    transition: top .2s ease;
+    top: 0;
+    z-index: 1;
+  }
+  .guilds-wrapper:not(:hover) {
+    top: 50px;
+  }
+  .guilds-wrapper ~ div {
+    transition: height .2s ease;
+  }
+  .guilds-wrapper:not(:hover) ~ div {
+    height: 100%;
+  }
+  .guilds-wrapper {
+    transition: opacity .2s ease;
+    opacity: 1;
+  }
+  .guilds-wrapper:not(:hover) {
+    opacity: 0;
+  }
+}
+/* Fixes borders around guilds in list */
+.guilds-wrapper {
+  width: $guild-height;
+
+  .scroller-wrap {
+    .guild {
+      height: $guild-height;
+      width: $guild-height;
+
+      .guild-inner a {
+        height: $guild-height !important;
+        width: $guild-height !important;
+      }
+    }
+  }
+
+  .guilds-add {
+    height: $guild-height;
+    width: $guild-height;
+  }
+
+  /*a.guilds-error {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: rotate(90deg);
+  }*/
+}
+/*.guilds-wrapper .scroller-wrap {
+  width: $guild-height;
+}*/
+/*.guilds-wrapper .scroller-wrap .guild .guild-inner {
+  height: $guild-height;
+  width: $guild-height;
+}*/

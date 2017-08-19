@@ -1,0 +1,27 @@
+.guilds-wrapper {
+  position: absolute;
+  transition: all .2s ease;
+  left: -65px;
+  height: 100%;
+  z-index: 2;
+
+  .guilds.scroller {
+    height: 100%;
+  }
+
+  .guilds .guilds-add {
+    position: relative !important;
+  }
+}
+.guilds-wrapper:hover {
+  left: 0;
+}
+.guilds>.guild:not(.guilds-add):last-of-type {
+  margin-bottom: 0 !important;
+}
+.channels-wrap {
+  z-index: 1;
+}
+.container-3lnMWU {
+  padding-left: 15px;
+}

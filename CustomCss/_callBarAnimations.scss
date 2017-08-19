@@ -1,0 +1,34 @@
+/* Adds a nice animation to the call bar */
+@mixin callbar-animation($ms) {
+  animation: callbar-slide-up $ms cubic-bezier(.2, 0, 0, 1);
+}
+.channels-wrap {
+  .container-3lnMWU {
+    @include callbar-animation(250ms);
+
+    .inner-ptMwR- {
+      .rtc-connection-status {
+        @include callbar-animation(300ms);
+      }
+
+      .channel-3YGMy1 {
+        @include callbar-animation(375ms);
+      }
+    }
+
+    .flex-lFgbSz {
+      .buttonInfo-3r6H7z {
+        @include callbar-animation(450ms);
+      }
+
+      .buttonDisconnect-3xZpYL {
+        @include callbar-animation(525ms);
+      }
+    }
+  }
+}
+@keyframes callbar-slide-up {
+  from {
+    transform: translate(0, 40px);
+  }
+}

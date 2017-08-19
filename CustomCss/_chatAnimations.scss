@@ -1,0 +1,17 @@
+/* Adds a nice animation to new messages */
+.message.message-sending .markup {
+  animation: messages-slide-up 300ms cubic-bezier(0.3, 0, 0, 1), opacity 50ms ease;
+}
+@keyframes messages-slide-up {
+  from {
+    transform: translate(0,5px);
+  }
+}
+.messages .message-group {
+  animation: message-group-slide-up 300ms cubic-bezier(0.3, 0, 0, 1), opacity 50ms ease;
+}
+@keyframes message-group-slide-up {
+  from {
+    transform: translate(0,10px);
+  }
+}
