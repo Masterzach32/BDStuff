@@ -83,3 +83,13 @@ $guild-height: 70px;
 .private-channels .channel .status {
   border-color: #222;
 }
+
+/*  */
+.chat .content .channel-members-wrap {
+  animation: members-wrap-transition 200ms ease;
+}
+@keyframes members-wrap-transition {
+  from {
+    transform: translateX(25px);
+  }
+}

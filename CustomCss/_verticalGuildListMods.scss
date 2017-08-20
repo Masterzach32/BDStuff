@@ -28,7 +28,7 @@
   z-index: 1;
 }
 
-.popout.popout-bottom {
+.popout.popout-bottom[style*="overflow: hidden; visibility: visible;"] {
   left: 0 !important;
   z-index: 1 !important;
 
