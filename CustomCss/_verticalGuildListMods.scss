@@ -1,9 +1,10 @@
 .guilds-wrapper {
   position: absolute;
   transition: all .2s ease;
-  left: -65px;
+  left: -60px;
   height: 100%;
   z-index: 2;
+  opacity: 0;
 
   .guilds.scroller {
     height: 100%;
@@ -13,15 +14,29 @@
     position: relative !important;
   }
 }
+
 .guilds-wrapper:hover {
   left: 0;
+  opacity: 1;
 }
+
 .guilds>.guild:not(.guilds-add):last-of-type {
   margin-bottom: 0 !important;
 }
+
 .channels-wrap {
   z-index: 1;
 }
-.container-3lnMWU {
-  padding-left: 15px;
+
+.popout.popout-bottom {
+  left: 0 !important;
+  z-index: 1 !important;
+
+  * {
+    z-index: 1 !important;
+  }
+}
+
+.popout.popout-top .status-picker.popout-menu {
+  left: 0 !important;
 }

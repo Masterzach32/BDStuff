@@ -2,6 +2,7 @@
 @mixin callbar-animation($ms) {
   animation: callbar-slide-up $ms cubic-bezier(.2, 0, 0, 1);
 }
+
 .channels-wrap {
   .container-3lnMWU {
     @include callbar-animation(250ms);
@@ -27,6 +28,7 @@
     }
   }
 }
+
 @keyframes callbar-slide-up {
   from {
     transform: translate(0, 40px);

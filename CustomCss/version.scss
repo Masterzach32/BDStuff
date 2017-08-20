@@ -1,23 +1,17 @@
 @import 'https://rawgit.com/Masterzach32/BDStuff/master/CustomCss/root.css';
 
-/* -------------------------------- *
- *            Variables             *
- * -------------------------------- */
 // status colors
 $color-online: #43b581;
 $color-idle: #faa61a;
 $color-dnd: #f04747;
 $color-offline: #636b75;
-
 // guild list height for horizontalServerList
 $guild-height: 70px;
 
-/* -------------------------------- *
- *             Imports              *
- * -------------------------------- */
 @import 'verticalGuildListMods';
 @import 'callBarAnimations';
 @import 'chatAnimations';
+@import 'betterEmbeds';
 
 /* -------------------------------- *
  *           Custom Styles          *

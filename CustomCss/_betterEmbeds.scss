@@ -1,0 +1,20 @@
+.message-group {
+  .accessory {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .accessory>*:not(:last-of-type) {
+    margin-right:10px;
+  }
+}
+
+.message-group .accessory>* {
+  margin-top:5px;
+}
+
+.reactions {
+  width:100%;
+  flex:100%;
+  order:9999999999;
+}
