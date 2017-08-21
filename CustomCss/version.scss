@@ -84,12 +84,24 @@ $guild-height: 70px;
   border-color: #222;
 }
 
-/*  */
+/* Member list opening animation */
 .chat .content .channel-members-wrap {
   animation: members-wrap-transition 200ms ease;
 }
 @keyframes members-wrap-transition {
   from {
-    transform: translateX(25px);
+    transform: translate(25px, 0);
   }
 }
+
+/* Remove the stub on beards chat  */
+.message-group{
+  .comment::before {
+    border: 0;
+  }
+
+  .comment {
+    padding: 10px 7px 10px 10px;
+  }
+}
+
