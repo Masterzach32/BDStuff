@@ -8,6 +8,7 @@ $color-offline: #636b75;
 // guild list height for horizontalServerList
 $guild-height: 70px;
 
+@import 'smallMembersTab';
 @import 'verticalGuildListMods';
 @import 'callBarAnimations';
 @import 'chatAnimations';
@@ -36,23 +37,6 @@ $guild-height: 70px;
 .horizontal-2BEEBe > .flex-lFgbSz:last-child,
 .horizontal-2BEEBe > .flexChild-1KGW5q:last-child {
   margin-right: 10px;
-}
-
-/* Theme the search bar for private channels */
-.private-channels .search-bar {
-  padding: 0;
-}
-
-.search-bar {
-  .search-bar-inner {
-    height: 100%;
-    padding: 0;
-  }
-
-  input {
-    height: 100%;
-    padding: 5px 10px;
-  }
 }
 
 /* game as status color */
@@ -84,7 +68,7 @@ $guild-height: 70px;
   border-color: #222;
 }
 
-/* Member list opening animation */
+/* Member list opening animation
 .chat .content .channel-members-wrap {
   animation: members-wrap-transition 200ms ease;
 }
@@ -92,7 +76,7 @@ $guild-height: 70px;
   from {
     transform: translate(25px, 0);
   }
-}
+}*/
 
 /* Remove the stub on beards chat  */
 .message-group{
