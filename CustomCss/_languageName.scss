@@ -1,0 +1,96 @@
+.markup {
+  .hljs::before {
+    display: block;
+    margin-bottom: 10px;
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+
+  /* .hljs[class~="" i]::before {content:'';} */
+  .hljs[class~="1c" i]::before {content:'1C';}
+  .hljs[class~="abnf" i]::before {content:'Augmented Backus–Naur Form';}
+  .hljs[class~="accesslog" i]::before {content:'Access logs';}
+  .hljs[class~="actionscript" i]::before {content:'ActionScript';}
+  .hljs[class~="ada" i]::before {content:'Ada';}
+  .hljs[class~="apache" i]::before {content:'Apache';}
+  .hljs[class~="apacheconf" i]::before {content:'Apache';}
+  .hljs[class~="arm" i]::before {content:'ARM assembler';}
+  .hljs[class~="armasm" i]::before {content:'ARM assembler';}
+  .hljs[class~="as" i]::before {content:'ActionScript';}
+  .hljs[class~="atom" i]::before {content:'Atom Syndication Format';}
+  .hljs[class~="autohotkey" i]::before {content:'AutoHotkey';}
+  .hljs[class~="avrasm" i]::before {content:'AVR assembler';}
+  .hljs[class~="bash" i]::before {content:'Bash';}
+  .hljs[class~="basic" i]::before {content:'BASIC';}
+  .hljs[class~="bat" i]::before {content:'Batch file (DOS)';}
+  .hljs[class~="bf" i]::before {content:'Brainfuck';}
+  .hljs[class~="brainfuck" i]::before {content:'brainfuck';}
+  .hljs[class~="clj" i]::before {content:'Clojure';}
+  .hljs[class~="clojure" i]::before {content:'Clojure';}
+  .hljs[class~="cmd" i]::before {content:'Batch file (NT)';}
+  .hljs[class~="coffee" i]::before {content:'CoffeeScript';}
+  .hljs[class~="coffeescript" i]::before {content:'CoffeeScript';}
+  .hljs[class~="cpp" i]::before {content:'C++';}
+  .hljs[class~="cs" i]::before {content:'C#';}
+  .hljs[class~="csharp" i]::before {content:'C#';}
+  .hljs[class~="cson" i]::before {content:'CoffeeScript';}
+  .hljs[class~="css" i]::before {content:'Cascading Stylesheet';}
+  .hljs[class~="d" i]::before {content:'D';}
+  .hljs[class~="dos" i]::before {content:'DOS';}
+  .hljs[class~="elixir" i]::before {content:'Elixir';}
+  .hljs[class~="elm" i]::before {content:'Elm';}
+  .hljs[class~="gemspec" i]::before {content:'Ruby Gemspec';}
+  .hljs[class~="go" i]::before {content:'Golang';}
+  .hljs[class~="golang" i]::before {content:'Golang';}
+  .hljs[class~="handlebars" i]::before {content:'Handlebars';}
+  .hljs[class~="hbs" i]::before {content:'Handlebars';}
+  .hljs[class~="html" i]::before {content:'Hypertext Markup Language';}
+  .hljs[class~="html.handlebars" i]::before {content:'Handlebars';}
+  .hljs[class~="html.hbs" i]::before {content:'Handlebars';}
+  .hljs[class~="http" i]::before {content:'Hypertext Transfer Protocol';}
+  .hljs[class~="https" i]::before {content:'Hypertext Transfer Protocol Secure';}
+  .hljs[class~="iced" i]::before {content:'CoffeeScript';}
+  .hljs[class~="ini" i]::before {content:'INI configuration file';}
+  .hljs[class~="java" i]::before {content:'Java';}
+  .hljs[class~="javascript" i]::before {content:'JavaScript';}
+  .hljs[class~="js" i]::before {content:'JavaScript';}
+  .hljs[class~="json" i]::before {content:'JavaScript Object Notation';}
+  .hljs[class~="jsp" i]::before {content:'Java';}
+  .hljs[class~="jsx" i]::before {content:'JavaScript';}
+  .hljs[class~="less" i]::before {content:'Less stylesheet';}
+  .hljs[class~="mak" i]::before {content:'Makefile';}
+  .hljs[class~="makefile" i]::before {content:'Makefile';}
+  .hljs[class~="markdown" i]::before {content:'Markdown';}
+  .hljs[class~="md" i]::before {content:'Markdown';}
+  .hljs[class~="mk" i]::before {content:'Makefile';}
+  .hljs[class~="mkd" i]::before {content:'Markdown';}
+  .hljs[class~="mkdown" i]::before {content:'Markdown';}
+  .hljs[class~="mm" i]::before {content:'Objective C++';}
+  .hljs[class~="obj-c" i]::before {content:'Objective C';}
+  .hljs[class~="objc" i]::before {content:'Objective C';}
+  .hljs[class~="objectivec" i]::before {content:'Objective C';}
+  .hljs[class~="plist" i]::before {content:'Property list';}
+  .hljs[class~="podspec" i]::before {content:'Ruby Podspec';}
+  .hljs[class~="prolog" i]::before {content:'Prolog';}
+  .hljs[class~="py" i]::before {content:'Python';}
+  .hljs[class~="python" i]::before {content:'Python';}
+  .hljs[class~="rb" i]::before {content:'Ruby';}
+  .hljs[class~="rs" i]::before {content:'Rust';}
+  .hljs[class~="rss" i]::before {content:'Really Simple Sindication';}
+  .hljs[class~="ruby" i]::before {content:'Ruby';}
+  .hljs[class~="rust" i]::before {content:'Rust';}
+  .hljs[class~="scss" i]::before {content:'Sassy Cascading Stylesheet';}
+  .hljs[class~="sql" i]::before {content:'Structured Query Language';}
+  .hljs[class~="swift" i]::before {content:'Swift';}
+  .hljs[class~="ts" i]::before {content:'TypeScript';}
+  .hljs[class~="typescript" i]::before {content:'TypeScript';}
+  .hljs[class~="vb" i]::before {content:'Visual Basic';}
+  .hljs[class~="vbnet" i]::before {content:'Visual Basic .NET';}
+  .hljs[class~="vbs" i]::before {content:'Visual Basic Scripting';}
+  .hljs[class~="vbscript" i]::before {content:'Visual Basic Scripting';}
+  .hljs[class~="vim" i]::before {content:'Vim Script';}
+  .hljs[class~="x86asm" i]::before {content:'x86 Assembly';}
+  .hljs[class~="xhtml" i]::before {content:'Extensible Hypertext Markup Language';}
+  .hljs[class~="xml" i]::before {content:'Extensible Markup Language';}
+  .hljs[class~="xsd" i]::before {content:'Extensible Markup Language Schema Definition';}
+  .hljs[class~="xsl" i]::before {content:'Extensible Markup Language Stylesheet';}
+}

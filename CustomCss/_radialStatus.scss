@@ -1,0 +1,44 @@
+/* Hover and popout like RadialStatus */
+.channel-members {
+  .member .status {
+    transition: all 150ms ease;
+  }
+
+  .member:hover .status, .channel-members .member.popout-open .status {
+    width: 100%;
+    background: transparent;
+    border-radius: inherit;
+    height: 100%;
+    right: -4px;
+    bottom: -4px;
+    padding: 2px;
+    transition: all 150ms ease;
+    border-width: 2px;
+    margin: 0;
+  }
+
+  .member:hover .status.status-online,
+  .member.popout-open .status.status-online {
+    border-color: #43b581 !important;
+  }
+
+  .member:hover .status.status-idle,
+  .member.popout-open .status.status-idle {
+    border-color: #faa61a !important;
+  }
+
+  .member:hover .status.status-dnd,
+  .member.popout-open .status.status-dnd {
+    border-color: #f04747 !important
+  }
+
+  .member:hover .status.status-offline,
+  .member.popout-open .status.status-offline {
+    border-color: #636b75 !important
+  }
+
+  .member:hover .status-streaming.status,
+  .member.popout-open .status-streaming.status {
+    border-color: #593695 !important
+  }
+}
