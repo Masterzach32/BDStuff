@@ -1,5 +1,57 @@
 @charset "UTF-8";
 @import "https://rawgit.com/Masterzach32/BDStuff/master/CustomCss/root.css";
+.app {
+  overflow-x: hidden; }
+
+.header-toolbar button.active {
+  display: none; }
+
+.channel-members {
+  transform: translate(0px);
+  z-index: 2000;
+  transition: all 400ms cubic-bezier(0.2, 0, 0, 1); }
+  .channel-members .member .member-activity, .channel-members .member .member-username-inner {
+    opacity: 0;
+    transition: all 100ms ease; }
+  .channel-members h2 {
+    transform: translate(-50%) scale(0.7);
+    transition: 400ms cubic-bezier(0.2, 0, 0, 1), max-width 1ms;
+    width: auto;
+    display: inline-block;
+    min-width: 10px;
+    left: 45px;
+    position: relative;
+    flex-basis: auto;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 90px;
+    right: 45px;
+    padding-left: 0;
+    padding-right: 0; }
+  .channel-members .avatar-small {
+    transform: scale(1.2); }
+
+.channel-members:hover {
+  transform: translate(-150px); }
+  .channel-members:hover .member .member-activity, .channel-members:hover .member .member-username-inner {
+    opacity: 1; }
+  .channel-members:hover h2 {
+    transform: translate(-15px) scale(1);
+    max-width: 180px;
+    text-overflow: 'a'; }
+  .channel-members:hover .avatar-small {
+    transform: scale(1); }
+
+.chat.flex-vertical.flex-spacer.private > .content.flex-spacer.flex-horizontal > .flex-spacer.flex-vertical {
+  margin-right: 0;
+  z-index: 0; }
+
+.channel-members-wrap {
+  min-width: 90px !important;
+  width: 90px !important; }
+
 .guilds-wrapper {
   position: absolute;
   transition: all .2s ease;
@@ -305,17 +357,6 @@
 .horizontal-2BEEBe > .flexChild-1KGW5q:last-child {
   margin-right: 10px; }
 
-/* Theme the search bar for private channels */
-.private-channels .search-bar {
-  padding: 0; }
-
-.search-bar .search-bar-inner {
-  height: 100%;
-  padding: 0; }
-.search-bar input {
-  height: 100%;
-  padding: 5px 10px; }
-
 /* game as status color */
 .channel-members .member.member-status-online .member-inner .member-activity-text strong {
   color: #43b581; }
@@ -330,13 +371,15 @@
 .private-channels .channel .status {
   border-color: #222; }
 
-/* Member list opening animation */
+/* Member list opening animation
 .chat .content .channel-members-wrap {
-  animation: members-wrap-transition 200ms ease; }
-
+  animation: members-wrap-transition 200ms ease;
+}
 @keyframes members-wrap-transition {
   from {
-    transform: translate(25px, 0); } }
+    transform: translate(25px, 0);
+  }
+}*/
 /* Remove the stub on beards chat  */
 .message-group .comment::before {
   border: 0; }
