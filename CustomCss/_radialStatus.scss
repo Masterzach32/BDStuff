@@ -4,7 +4,7 @@
     transition: all 150ms ease;
   }
 
-  .member:hover .status, .channel-members .member.popout-open .status {
+  .member:hover .status, .member.popout-open .status {
     width: 100%;
     background: transparent;
     border-radius: inherit;

@@ -309,7 +309,7 @@
 /* Hover and popout like RadialStatus */
 .channel-members .member .status {
   transition: all 150ms ease; }
-.channel-members .member:hover .status, .channel-members .channel-members .member.popout-open .status {
+.channel-members .member:hover .status, .channel-members .member.popout-open .status {
   width: 100%;
   background: transparent;
   border-radius: inherit;
