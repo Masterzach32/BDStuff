@@ -8,26 +8,18 @@ $color-offline: #636b75;
 // guild list height for horizontalServerList
 $guild-height: 70px;
 
-@import 'smallMembersTab';
-@import 'verticalGuildListMods';
-@import 'callBarAnimations';
-@import 'chatAnimations';
-@import 'betterEmbeds';
+@import "noticeFix";
+@import "ripples";
 @import "languageName";
-@import "radialStatus";
+@import "callBarAnimations";
 
 /* -------------------------------- *
  *           Custom Styles          *
  * -------------------------------- */
 /* Fix long usernames */
-.container-iksrDt .accountDetails-15i-_e .username {
+.container-2Thooq .accountDetails-3k9g4n .username {
   font-size: 13px !important;
   text-overflow: none;
-}
-
-/* Add border between new dms and guilds */
-.dms .guild:last-of-type {
-  border-bottom: solid rgba(255, 255, 255, 0.2) 2px !important;
 }
 
 /* Remove bold from BD version information */
@@ -35,59 +27,20 @@ $guild-height: 70px;
   font-weight: normal !important;
 }
 
-/* Fix group call buttons alignment */
-.horizontal-2BEEBe > .flex-lFgbSz:last-child,
-.horizontal-2BEEBe > .flexChild-1KGW5q:last-child {
-  margin-right: 10px;
-}
-
-/* game as status color */
-@mixin member-activity-text($color) {
-  .member-inner .member-activity-text strong {
-    color: $color;
-  }
-}
-.channel-members {
-  .member.member-status-online {
-    @include member-activity-text($color-online);
-  }
-
-  .member.member-status-idle {
-    @include member-activity-text($color-idle);
-  }
-
-  .member.member-status-dnd {
-    @include member-activity-text($color-dnd);
-  }
-
-  .member.member-status-offline {
-    @include member-activity-text($color-offline);
-  }
-}
-
 /* Fixes the borders around user's status in the private channel list */
 .private-channels .channel .status {
   border-color: #222;
 }
 
-/* Member list opening animation
-.chat .content .channel-members-wrap {
-  animation: members-wrap-transition 200ms ease;
-}
-@keyframes members-wrap-transition {
-  from {
-    transform: translate(25px, 0);
-  }
-}*/
+.lookOutlined-3sRXeN {
+  border: none;
 
-/* Remove the stub on beards chat  */
-.message-group{
-  .comment::before {
-    border: 0;
-  }
-
-  .comment {
-    padding: 10px 7px 10px 10px;
+  &.colorRed-1TFJan {
+    color: #fff;
+    background-color: #f04747;
   }
 }
 
+.chat .title-3qD0b- .flex-1xMQg5.flex-1O1GKY::after {
+  margin-left: 4px;
+}

@@ -1,0 +1,23 @@
+/* game as status color */
+@mixin member-activity-text($color) {
+  .member-inner .member-activity-text strong {
+    color: $color;
+  }
+}
+.channel-members {
+  .member.member-status-online {
+    @include member-activity-text($color-online);
+  }
+
+  .member.member-status-idle {
+    @include member-activity-text($color-idle);
+  }
+
+  .member.member-status-dnd {
+    @include member-activity-text($color-dnd);
+  }
+
+  .member.member-status-offline {
+    @include member-activity-text($color-offline);
+  }
+}

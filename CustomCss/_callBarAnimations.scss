@@ -3,26 +3,26 @@
   animation: callbar-slide-up $ms cubic-bezier(.2, 0, 0, 1);
 }
 
-.channels-wrap {
-  .container-3lnMWU {
+.channels-Ie2l6A {
+  .container-1UB9sr {
     @include callbar-animation(250ms);
 
-    .inner-ptMwR- {
+    .inner-btChU7 {
       .rtc-connection-status {
         @include callbar-animation(300ms);
       }
 
-      .channel-3YGMy1 {
+      .channel-SEolQq {
         @include callbar-animation(375ms);
       }
     }
 
-    .flex-lFgbSz {
-      .buttonInfo-3r6H7z {
+    .flex-1xMQg5 {
+      .buttonInfo-3nkbOt {
         @include callbar-animation(450ms);
       }
 
-      .buttonDisconnect-3xZpYL {
+      .buttonDisconnect-3W_SJc {
         @include callbar-animation(525ms);
       }
     }
