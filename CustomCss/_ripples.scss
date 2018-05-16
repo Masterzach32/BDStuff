@@ -1,41 +1,6 @@
-// NOTE: Requires revertTitlebar
+// NOTE: designed around revertTitlebar
 
-// min, max and close
-.titleBar-AC4pGV {
-  background: transparent !important;
-
-  .winButton-iRh8-Z {
-    transition: background 100ms ease !important;
-
-    &:after {
-      width: 100%;
-      height: 100%;
-      background: var(--white10);
-      content: "";
-      display: block;
-      border-radius: 50%;
-      opacity: 0;
-      position: absolute;
-      left: calc(50% + 0.5px);
-      top: calc(50% + 0px);
-      -ms-transform: translate(-50%, -50%) scale(1.3);
-      transform: translate(-50%, -50%) scale(1.3);
-      transition: 300ms ease;
-      pointer-events: none;
-    }
-
-    &:active:after {
-      opacity: 0.15;
-      -ms-transform: translate(-50%, -50%) scale(1.3);
-      transform: translate(-50%, -50%) scale(1.3);
-      animation: scale-center 200ms cubic-bezier(0, 0, 0, 1);
-      transition: 0ms ease;
-    }
-  }
-}
-
-// titlebar
-.chat .title-3qD0b- .icon-1R19_H {
+@mixin circle-ripple-animation($opacity, $size) {
   transition: background 100ms ease !important;
 
   &:after {
@@ -49,51 +14,41 @@
     position: absolute;
     left: calc(50% + 0.5px);
     top: calc(50% + 0px);
-    -ms-transform: translate(-50%, -50%) scale(1.3);
-    transform: translate(-50%, -50%) scale(1.3);
+    -ms-transform: translate(-50%, -50%) scale($size);
+    transform: translate(-50%, -50%) scale($size);
     transition: 300ms ease;
     pointer-events: none;
   }
 
   &:active:after {
-    opacity: 0.15;
-    -ms-transform: translate(-50%, -50%) scale(1.3);
-    transform: translate(-50%, -50%) scale(1.3);
+    opacity: $opacity;
+    -ms-transform: translate(-50%, -50%) scale($size);
+    transform: translate(-50%, -50%) scale($size);
     animation: scale-center 200ms cubic-bezier(0, 0, 0, 1);
     transition: 0ms ease;
   }
+}
+
+// min, max and close
+.titleBar-AC4pGV {
+  background: transparent !important;
+
+  .winButton-iRh8-Z {
+    @include circle-ripple-animation(0.15, 1.3);
+  }
+}
+
+// titlebar
+.chat .title-3qD0b- .icon-1R19_H {
+  @include circle-ripple-animation(0.1, 1.3);
 }
 
 // attach file and emoji buttons
 .chat .channelTextAreaEnabled-iusU9o .flex-1xMQg5,
 .chat .channelTextAreaEnabled-iusU9o .emojiButton-3uL3Aw {
   width: 70px!important;
-  transition:background 100ms ease!important;
 
-  &:after {
-    width: 100%;
-    height: 100%;
-    background: var(--white10);
-    content: "";
-    display: block;
-    border-radius: 50%;
-    opacity: 0;
-    position: absolute;
-    left: calc(50% + 0.5px);
-    top: calc(50% + 0px);
-    -ms-transform: translate(-50%, -50%) scale(0.6);
-    transform: translate(-50%, -50%) scale(0.6);
-    transition: 300ms ease;
-    pointer-events: none;
-  }
-
-  &:active:after {
-    opacity: 0.1;
-    -ms-transform: translate(-50%, -50%) scale(0.6);
-    transform: translate(-50%, -50%) scale(0.6);
-    animation: scale-center 200ms cubic-bezier(0, 0, 0, 1);
-    transition: 0ms ease;
-  }
+  @include circle-ripple-animation(0.15, 0.6);
 
   &.popout-open:after {
     opacity: 0.1;
@@ -104,32 +59,8 @@
 .guilds-wrapper .scroller .friends-icon {
   height: 70px !important;
   margin: 0;
-  transition: background 100ms ease !important;
 
-  &:after {
-    width: 100%;
-    height: 100%;
-    background: var(--white10);
-    content: "";
-    display: block;
-    border-radius: 50%;
-    opacity: 0;
-    position: absolute;
-    left: calc(50% + 0.5px);
-    top: calc(50% + 0px);
-    -ms-transform: translate(-50%, -50%) scale(0.8);
-    transform: translate(-50%, -50%) scale(0.8);
-    transition: 300ms ease;
-    pointer-events: none;
-  }
-
-  &:active:after {
-    opacity: 0.1;
-    -ms-transform: translate(-50%, -50%) scale(0.8);
-    transform: translate(-50%, -50%) scale(0.8);
-    animation: scale-center 200ms cubic-bezier(0, 0, 0, 1);
-    transition: 0ms ease;
-  }
+  @include circle-ripple-animation(0.1, 0.8);
 }
 
 // user popout
@@ -138,60 +69,25 @@
     height: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    transition: background 100ms ease !important;
 
-    &:after {
-      width: 100%;
-      height: 100%;
-      background: var(--white10);
-      content: "";
-      display: block;
-      border-radius: 50%;
-      opacity: 0;
-      position: absolute;
-      left: calc(50% + 0.5px);
-      top: calc(50% + 0px);
-      -ms-transform: translate(-50%, -50%) scale(2);
-      transform: translate(-50%, -50%) scale(2);
-      transition: 300ms ease;
-      pointer-events: none;
-    }
-
-    &:active:after {
-      opacity: 0.1;
-      -ms-transform: translate(-50%, -50%) scale(2);
-      transform: translate(-50%, -50%) scale(2);
-      animation: scale-center 200ms cubic-bezier(0, 0, 0, 1);
-      transition: 0ms ease;
-    }
+    @include circle-ripple-animation(0.1, 2.0);
   }
 
   .roleCircleButton-377y0l {
-    transition: background 100ms ease !important;
-
-    &:after {
-      width: 100%;
-      height: 100%;
-      background: var(--white10);
-      content: "";
-      display: block;
-      border-radius: 50%;
-      opacity: 0;
-      position: absolute;
-      left: calc(50% + 0.5px);
-      top: calc(50% + 0px);
-      -ms-transform: translate(-50%, -50%) scale(1.3);
-      transform: translate(-50%, -50%) scale(1.3);
-      transition: 300ms ease;
-      pointer-events: none;
-    }
-
-    &:active:after {
-      opacity: 0.1;
-      -ms-transform: translate(-50%, -50%) scale(1.3);
-      transform: translate(-50%, -50%) scale(1.3);
-      animation: scale-center 200ms cubic-bezier(0, 0, 0, 1);
-      transition: 0ms ease;
-    }
+    @include circle-ripple-animation(0.1, 1.3);
   }
+}
+
+.scroller-2FKFPG {
+  .containerDefault-1ZnADq .iconSpacing-3JkGQO {
+    @include circle-ripple-animation(0.1, 1.3);
+  }
+
+  /*.containerDefault-3GGEv_ .margin-reset div {
+    @include circle-ripple-animation(0.1, 1.3);
+  }*/
+}
+
+.private-channel-call-actions .icons-wrapper .iconButton-3V4WS5 {
+  @include circle-ripple-animation(0.1, 1.6);
 }
