@@ -4,7 +4,7 @@
 .notice-2FJMB4 {
   position: absolute;
   top: 70px;
-  width: calc(100vw - 70px);
+  width: calc(100vw - 102px);
   border-radius: 0;
 
   .button-1MICoQ {
@@ -21,6 +21,7 @@
   }
 
   .dismiss-SCAH9H {
+    right: 0;
     transition:background 100ms ease!important;
   }
 

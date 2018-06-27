@@ -12,6 +12,7 @@ $guild-height: 70px;
 @import "ripples";
 @import "languageName";
 @import "callBarAnimations";
+//@import "settingsModal";
 
 /* -------------------------------- *
  *           Custom Styles          *
@@ -32,12 +33,31 @@ $guild-height: 70px;
   border-color: #222;
 }
 
-.lookOutlined-3sRXeN {
-  border: none;
+/*
+  TEMPORARY FIXES
+ */
 
-  &.colorRed-1TFJan {
-    color: #fff;
-    background-color: #f04747;
+.friends-table-header {
+  background: var(--lvl1);
+}
+
+.lookOutlined-3sRXeN {
+  border: none!important;
+}
+
+.colorRed-1TFJan {
+  color: #fff!important;
+  background-color: #f04747!important;
+
+  &:active {
+    color: rgba(0, 0, 0, 0.7)!important;//color: #f04747!important;
+    background-color: gainsboro!important;
+  }
+}
+
+.lookLink-9FtZy- {
+  &:active {
+    color: rgba(0, 0, 0, 0.7)!important;
   }
 }
 
@@ -46,5 +66,41 @@ $guild-height: 70px;
 }
 
 .connectionHeader-2MDqhu .connectionDelete-2Odoln {
-  border: none!important;
+  border: none !important;
+}
+
+/*.activityFeed-28jde9 {
+  .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv {
+    background: var(--lvl3);
+  }
+
+  .feed-1o0xmF {
+    margin-top: 48px;
+  }
+}*/
+
+#app-mount .titleBar-AC4pGV {
+  background: transparent!important;
+}
+
+// Games tab fixes
+.activityFeed-28jde9 {
+  background: var(--lvl1)!important;
+
+  .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv {
+    background: var(--lvl1);
+
+    /*&::before {
+      content: "";
+      height: 48px;
+      width: 100%;
+      background: var(--lvl3);
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      line-height: 47px;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4) !important;
+      display: block;
+    }*/
+  }
 }

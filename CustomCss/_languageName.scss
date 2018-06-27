@@ -5,7 +5,7 @@
     font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
   }
 
-  /* .hljs[class~="" i]::before {content:'';} */
+  /* .hljs[class~="<code>" i]::before {content:'<language name>';} */
   .hljs[class~="1c" i]::before {content:'1C';}
   .hljs[class~="abnf" i]::before {content:'Augmented Backus–Naur Form';}
   .hljs[class~="accesslog" i]::before {content:'Access logs';}

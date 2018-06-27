@@ -44,8 +44,8 @@
 }
 
 // attach file and emoji buttons
-.chat .channelTextAreaEnabled-iusU9o .flex-1xMQg5,
-.chat .channelTextAreaEnabled-iusU9o .emojiButton-3uL3Aw {
+.chat .channelTextArea-1LDbYG .flex-1xMQg5,
+.chat .channelTextArea-1LDbYG .emojiButton-3uL3Aw {
   width: 70px!important;
 
   @include circle-ripple-animation(0.15, 0.6);
@@ -56,12 +56,12 @@
 }
 
 // dm button
-.guilds-wrapper .scroller .friends-icon {
+/*.guilds-wrapper .scroller .home-icon {
   height: 70px !important;
   margin: 0;
 
   @include circle-ripple-animation(0.1, 0.8);
-}
+}*/
 
 // user popout
 .userPopout-3XzG_A {
